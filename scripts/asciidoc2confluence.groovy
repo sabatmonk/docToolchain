@@ -708,6 +708,7 @@ config.confluence.input.each { input ->
     def masterid = input.ancestorId
 
     // if confluenceAncestorId is not set, create a new parent page
+
     def parentId = !confluenceAncestorId ? null : confluenceAncestorId
     def anchors = [:]
     def pageAnchors = [:]
